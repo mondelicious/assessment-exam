@@ -19,7 +19,7 @@ class CarsFilter(FilterSet):
 
 
 class CarsViewSet(viewsets.ModelViewSet):
-    queryset = cars.objects.all()
+    queryset = cars.objects.all().order_by()
     serializer_class = CarsSerializer
     permission_classes = [IsAuthenticated]
     filter_class = (CarsFilter)

@@ -25,7 +25,6 @@ class Cars(models.Model):
     class Meta:
         verbose_name = 'List of Car'
         verbose_name_plural = 'List of Cars'
-        ordering = ['-color']
     
     def __str__(self):
         return "%s - %s" %(self.name, self.color)
