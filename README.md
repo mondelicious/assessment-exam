@@ -22,3 +22,11 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Django setup
+pip install -r requirements.txt
+
+python manage.py migrate
+
+python manage.py runserver

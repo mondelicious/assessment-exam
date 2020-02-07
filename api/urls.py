@@ -4,7 +4,7 @@ from rest_framework.routers import DefaultRouter
 from rest_framework.authtoken import views
 
 from users.api.views import UserViewSet
-from cars.api.views import CarsViewSet, ColorsViewSet
+from api.views import CarsViewSet, ColorsViewSet
 
 
 router = DefaultRouter()

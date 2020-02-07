@@ -18,7 +18,7 @@ from django.urls import path, include, re_path
 
 from django_registration.backends.one_step.views import RegistrationView
 
-from core.views import IndexTemplateView
+from .views import IndexTemplateView
 from users.forms import CustomUserForm
 
 urlpatterns = [
