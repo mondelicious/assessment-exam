@@ -9,11 +9,19 @@
         <div class="pull-right">
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <label class="input-group-text" for="inputGroupSelect01">Show color</label>
+              <label class="input-group-text" for="inputGroupSelect01"
+                >Show color</label
+              >
             </div>
-            <select class="custom-select" id="inputGroupSelect01" v-model="color"
-              @click.prevent="getQColorCars">
-              <option v-for="color in colors" :key="color.id">{{ color.name }}</option>
+            <select
+              class="custom-select"
+              id="inputGroupSelect01"
+              v-model="color"
+              @click.prevent="getQColorCars"
+            >
+              <option v-for="color in colors" :key="color.id">{{
+                color.name
+              }}</option>
             </select>
           </div>
         </div>
@@ -29,7 +37,10 @@
           <draggable v-model="items" tag="tbody">
             <tr v-for="item in items" :key="item.id">
               <td>
-                <router-link :to="{ name: 'car.edit', params: { id: item.id } }">{{ item.name }}</router-link>
+                <router-link
+                  :to="{ name: 'car.edit', params: { id: item.id } }"
+                  >{{ item.name }}</router-link
+                >
               </td>
               <td>{{ item.color }}</td>
             </tr>

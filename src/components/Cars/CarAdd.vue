@@ -13,10 +13,18 @@
             <div class="form-group col-md-12">
               <div class="input-group mb-12">
                 <div class="input-group-prepend">
-                  <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                  <label class="input-group-text" for="inputGroupSelect01"
+                    >Options</label
+                  >
                 </div>
-                <select class="custom-select" id="inputGroupSelect01" v-model="newCar.color">
-                  <option v-for="color in colors" :key="color.id">{{ color.name }}</option>
+                <select
+                  class="custom-select"
+                  id="inputGroupSelect01"
+                  v-model="newCar.color"
+                >
+                  <option v-for="color in colors" :key="color.id">{{
+                    color.name
+                  }}</option>
                 </select>
               </div>
             </div>

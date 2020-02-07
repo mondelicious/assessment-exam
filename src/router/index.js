@@ -4,7 +4,6 @@ import Home from "../views/Home.vue";
 import CarEditor from "../components/Cars/CarEditor.vue";
 import CarAdd from "../components/Cars/CarAdd.vue";
 
-
 Vue.use(VueRouter);
 
 const routes = [
@@ -23,7 +22,7 @@ const routes = [
     path: "/car/add/",
     name: "car.add",
     component: CarAdd
-  },
+  }
 ];
 
 const router = new VueRouter({

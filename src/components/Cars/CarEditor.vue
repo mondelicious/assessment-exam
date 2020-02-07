@@ -21,22 +21,41 @@
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputEmail4">Name</label>
-                <input type="text" class="form-control" disabled v-model="item.name" />
+                <input
+                  type="text"
+                  class="form-control"
+                  disabled
+                  v-model="item.name"
+                />
               </div>
               <div class="form-group col-md-6">
                 <label for="inputEmail4">Color</label>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                    <label class="input-group-text" for="inputGroupSelect01"
+                      >Options</label
+                    >
                   </div>
-                  <select class="custom-select" id="inputGroupSelect01" v-model="item.color">
-                    <option v-for="color in colors" :key="color.id">{{ color.name }}</option>
+                  <select
+                    class="custom-select"
+                    id="inputGroupSelect01"
+                    v-model="item.color"
+                  >
+                    <option v-for="color in colors" :key="color.id">{{
+                      color.name
+                    }}</option>
                   </select>
                 </div>
               </div>
             </div>
             <button type="submit" class="btn btn-info">Update</button>
-            <button type="submit" class="btn btn-danger ml-2" @click="deleteExpense">Delete</button>
+            <button
+              type="submit"
+              class="btn btn-danger ml-2"
+              @click="deleteExpense"
+            >
+              Delete
+            </button>
           </form>
         </div>
       </div>
